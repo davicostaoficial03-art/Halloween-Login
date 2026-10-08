@@ -1,113 +1,242 @@
+/* Remove as margens e espaçamentos padrão de todos os elementos */
 * {
     margin: 0;
     padding: 0;
+
+    /* Faz width e height incluírem padding e borda */
     box-sizing: border-box;
+
+    /* Define a fonte Creepster como fonte principal */
     font-family: "Creepster", system-ui;
 }
 
+/* Estiliza o corpo inteiro da página */
 body {
+    /* Define a imagem de Halloween como plano de fundo */
     background: url("haloween.jpg");
+
+    /* Faz a imagem ocupar toda a área disponível */
     background-size: cover;
+
+    /* Centraliza a imagem de fundo */
     background-position: center;
+
+    /* Define a altura mínima como 100% da altura da tela */
     min-height: 100vh;
+
+    /* Ativa o Flexbox */
     display: flex;
+
+    /* Centraliza os elementos verticalmente */
     align-items: center;
+
+    /* Centraliza os elementos horizontalmente */
     justify-content: center;
 }
 
+/* Estiliza o contêiner principal do formulário */
 .container {
+    /* Define a largura do contêiner */
     width: 420px;
+
+    /* Mantém o fundo transparente */
     background: transparent;
+
+    /* Cria uma borda branca parcialmente transparente */
     border: 2px solid rgba(255, 255, 255, .2);
+
+    /* Aplica um desfoque no conteúdo que estiver atrás do contêiner */
     backdrop-filter: blur(20px);
+
+    /* Arredonda os cantos */
     border-radius: 10px;
+
+    /* Cria espaço interno entre a borda e o conteúdo */
     padding: 30px 40px;
 }
 
+/* Estiliza o título principal */
 h1 {
+    /* Define o tamanho da fonte */
     font-size: 36px;
+
+    /* Centraliza o texto */
     text-align: center;
+
+    /* Define a cor branca */
     color: #fff;
 }
 
+/* Estiliza os contêineres dos campos de entrada */
 .input-container {
+    /* Permite posicionar elementos internos de forma relativa */
     position: relative;
+
+    /* Faz o contêiner ocupar toda a largura disponível */
     width: 100%;
+
+    /* Define a altura do campo */
     height: 50px;
+
+    /* Cria espaço acima e abaixo */
     margin: 30px 0;
 }
 
+/* Estiliza os campos de email e senha */
 .input-container input {
+    /* Ocupa toda a largura do contêiner */
     width: 100%;
+
+    /* Ocupa toda a altura definida */
     height: 100%;
+
+    /* Deixa o fundo transparente */
     background: transparent;
+
+    /* Remove a borda padrão */
     border: none;
+
+    /* Remove o contorno padrão ao selecionar o campo */
     outline: none;
+
+    /* Cria uma borda branca parcialmente transparente */
     border: 2px solid rgba(255, 255, 255, .2);
+
+    /* Arredonda os cantos do campo */
     border-radius: 10px;
+
+    /* Define o tamanho do texto */
     font-size: 16px;
+
+    /* Define a cor do texto digitado */
     color: #fff;
+
+    /* Cria espaço interno para o texto e para a imagem */
     padding: 20px 45px 20px 20px;
 }
 
-.input-container input::placeholder{
+/* Estiliza o texto de exemplo dentro dos campos */
+.input-container input::placeholder {
+    /* Define a cor do placeholder como branca */
     color: #fff;
 }
 
+/* Estiliza as imagens dentro dos campos */
 .input-container img {
+    /* Permite posicionar a imagem dentro do contêiner */
     position: absolute;
+
+    /* Posiciona a imagem a 24px da direita */
     right: 24px;
+
+    /* Posiciona a imagem verticalmente */
     top: 20%;
+
+    /* Adiciona um pequeno deslocamento para baixo */
     margin-top: 5px;
 }
 
-.input-container a contain{
+/* Estiliza o link dentro do campo */
+.input-container a contain {
+    /* Define o tamanho do texto */
     font-size: 16px;
+
+    /* Cria espaço acima */
     margin-top: 5px;
+
+    /* Define a cor branca */
     color: #fff;
+
+    /* Remove o sublinhado padrão */
     text-decoration: none;
 }
 
-.input-container a:hover{
+/* Aplica estilo quando o mouse passa sobre o link */
+.input-container a:hover {
+    /* Adiciona o sublinhado ao passar o mouse */
     text-decoration: underline;
 }
 
+/* Estiliza o botão de entrada */
 .submit-button {
+    /* Faz o botão ocupar toda a largura */
     width: 100%;
+
+    /* Define a altura do botão */
     height: 50px;
+
+    /* Define a cor roxa do botão */
     background-color: #5100b5;
+
+    /* Remove a borda padrão */
     border: none;
+
+    /* Arredonda os cantos */
     border-radius: 10px;
+
+    /* Define a cor do texto como branca */
     color: #fff;
+
+    /* Deixa o texto mais grosso */
     font-weight: 700;
+
+    /* Cria espaço acima do botão */
     margin-top: 24px;
+
+    /* Mostra o cursor de mão sobre o botão */
     cursor: pointer;
+
+    /* Remove o contorno padrão */
     outline: none;
+
+    /* Define o tamanho do texto */
     font-size: 16px;
 }
 
+/* Estilo do botão quando o mouse passa sobre ele */
 .submit-button:hover {
+    /* Muda o roxo para um tom mais claro */
     background-color: #6109cb;
 }
 
+/* Estiliza o texto da área de cadastro */
 .register-link p {
+    /* Define o tamanho do texto */
     font-size: 16px;
+
+    /* Define a cor branca */
     color: #fff;
+
+    /* Define a espessura da fonte */
     font-weight: 500;
 }
 
+/* Estiliza o contêiner da área de cadastro */
 .register-link {
+    /* Centraliza o conteúdo */
     text-align: center;
+
+    /* Cria espaço acima e abaixo */
     margin: 20px 0;
 }
 
+/* Estiliza o link "Cadastrar" */
 .register-link p a {
+    /* Define o tamanho do texto */
     font-size: 16px;
+
+    /* Define a cor branca */
     color: #fff;
+
+    /* Deixa o texto em negrito */
     font-weight: 700;
+
+    /* Remove o sublinhado padrão */
     text-decoration: none;
 }
 
+/* Estilo do link "Cadastrar" ao passar o mouse */
 .register-link p a:hover {
+    /* Adiciona o sublinhado */
     text-decoration: underline;
 }
