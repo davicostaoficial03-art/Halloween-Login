@@ -1,35 +1,128 @@
 <!DOCTYPE html>
+<!-- Informa ao navegador que este documento utiliza HTML5 -->
+
 <html lang="pt-br">
+<!-- Inicia o documento HTML e define o idioma como português do Brasil -->
+
 <head>
+    <!-- Contém informações e configurações da página que não aparecem diretamente no conteúdo -->
+
     <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8, permitindo acentos e caracteres especiais -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a página se adaptar corretamente a diferentes tamanhos de tela, como celular e computador -->
+
     <link rel="stylesheet" href="style.css">
+    <!-- Conecta o arquivo CSS "style.css" ao documento HTML para aplicar os estilos -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Informa ao navegador para iniciar antecipadamente a conexão com o servidor do Google Fonts -->
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Prepara a conexão com o servidor que fornece os arquivos das fontes -->
+
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <!-- Importa a fonte "Creepster", usada para dar uma aparência temática de Halloween -->
+
     <title>Tela de Login</title>
+    <!-- Define o título que aparece na aba do navegador -->
+
 </head>
+<!-- Finaliza a seção de configurações da página -->
+
 <body>
+<!-- Inicia o corpo da página, onde ficam os elementos visíveis para o usuário -->
+
     <div class="container">
+    <!-- Cria um contêiner para organizar e estilizar toda a área do formulário -->
+
         <form>
+        <!-- Cria o formulário onde serão inseridos os dados de login -->
+
             <h1>Entrar na Plataforma</h1>
+            <!-- Exibe o título principal da tela de login -->
+
             <div class="input-container">
+            <!-- Cria um contêiner para agrupar o campo de email e sua imagem -->
+
                 <input placeholder="Email" type="email" required>
+                <!--
+                Cria o campo para digitar o email.
+                placeholder="Email": mostra o texto "Email" enquanto o campo está vazio.
+                type="email": informa que o campo deve receber um endereço de email.
+                required: torna o preenchimento obrigatório.
+                -->
+
                 <img width="20" height="20" src="fantasma.png" alt="Imagem não encontrada"/>
+                <!--
+                Adiciona a imagem de um fantasma ao campo.
+                width="20": define a largura da imagem em 20 pixels.
+                height="20": define a altura da imagem em 20 pixels.
+                src="fantasma.png": indica o arquivo da imagem.
+                alt="Imagem não encontrada": texto alternativo caso a imagem não seja carregada.
+                -->
+
             </div>
-            
+            <!-- Finaliza o contêiner do campo de email -->
+
             <div class="input-container">
+            <!-- Cria outro contêiner para o campo de senha -->
+
                 <input placeholder="Senha" type="password" required>
+                <!--
+                Cria o campo para digitar a senha.
+                placeholder="Senha": mostra o texto "Senha" enquanto o campo está vazio.
+                type="password": oculta os caracteres digitados.
+                required: torna o preenchimento obrigatório.
+                -->
+
                 <img width="20" height="20" src="teia-de-aranha.png" alt="Imagem não encontrada">
+                <!--
+                Adiciona uma imagem de teia de aranha ao campo de senha.
+                src: indica o arquivo da imagem.
+                width e height: definem o tamanho da imagem.
+                alt: fornece um texto alternativo caso a imagem não seja carregada.
+                -->
+
                 <a href="#">Esqueci minha senha</a>
+                <!--
+                Cria um link para a opção "Esqueci minha senha".
+                href="#": atualmente não direciona para outra página, servindo apenas como um link de exemplo.
+                -->
+
             </div>
+            <!-- Finaliza o contêiner do campo de senha -->
 
             <button type="submit" class="submit-button">Entrar</button>
+            <!--
+            Cria o botão de envio do formulário.
+            type="submit": indica que o botão envia o formulário.
+            class="submit-button": permite aplicar estilos específicos pelo CSS.
+            -->
 
             <div class="register-link">
+            <!-- Cria um contêiner para a área de cadastro -->
+
                 <p>Não está cadastrado ? <a href="#">Cadastrar</a></p>
+                <!--
+                Exibe uma mensagem informando que o usuário pode se cadastrar.
+                <p>: cria um parágrafo.
+                <a>: cria o link "Cadastrar".
+                href="#": atualmente é apenas um link de exemplo.
+                -->
+
             </div>
+            <!-- Finaliza a área de cadastro -->
+
         </form>
+        <!-- Finaliza o formulário -->
+
     </div>
+    <!-- Finaliza o contêiner principal -->
+
 </body>
+<!-- Finaliza o conteúdo visível da página -->
+
 </html>
+<!-- Finaliza o documento HTML -->
